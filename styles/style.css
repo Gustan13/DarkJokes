@@ -1,0 +1,94 @@
+body {
+    background-color: black;
+}
+
+.container {
+    height: 85vh;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+
+    grid-template-areas: 'title im'
+                        'welcome generate'
+                        'joke joke';
+
+    grid-gap: 30px 50px;
+    align-items: center;
+}
+
+.title {
+    grid-area: title;
+
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.welcome {
+    grid-area: welcome;
+
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.generate {
+    grid-area: generate;
+
+    padding: 10px 20px;
+
+    border-radius: 3px;
+
+    text-decoration: none;
+
+    transition-duration: 0.2s;
+
+    color: white;
+
+    background-color: black;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.generate:hover {
+    
+    color: rgb(68, 68, 68);
+
+    background-color: rgb(172, 172, 172);
+}
+
+.joke {
+    color: white;
+
+    font-size: 13.5px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.joke2 {
+    color: white;
+
+    font-size: 13.5px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.jokeContainer {
+    grid-area: joke;
+}
+
+.copyright {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed;
+    bottom: 0;
+}
+
+img {
+    grid-area: im;
+    height: 50px;
+}
+
